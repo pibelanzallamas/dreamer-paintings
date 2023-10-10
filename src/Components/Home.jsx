@@ -2,7 +2,11 @@ function Home() {
   return (
     <div>
       <h1>Hola, soy Fernando</h1>
-      <h2>Estas son mis obras</h2>
+      <h2>
+        Estas son mis obras y se las quiero mostrar, las realice con pinturas
+        acrilicas y los marcos son de madera y tela.
+      </h2>
+
       <div className="contenedor">
         <div className="obra">
           <img src="/1.jpeg"></img>
