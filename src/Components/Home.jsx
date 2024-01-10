@@ -1,47 +1,29 @@
+import React, { useState } from "react";
+import painting1 from "../assets/1.jpeg";
+import painting2 from "../assets/2.jpeg";
+import painting3 from "../assets/3.jpeg";
+import painting4 from "../assets/4.jpeg";
+import painting5 from "../assets/5.jpeg";
+import { useSelector } from "react-redux";
+
 function Home() {
+  const paintings = [painting1, painting2, painting3, painting4, painting5];
+  const [ampliada, setAmpliada] = useState(false);
+  const theme = useSelector((state) => state.theme.dark);
+
   return (
-    <div>
-      <h1>Hola, soy Fernando</h1>
+    <div className={theme ? "home-oscuro" : "home-claro"}>
+      <h1>Dreamers Paintings</h1>
       <h2>
-        Estas son mis obras y se las quiero mostrar, las realice con pinturas
-        acrilicas y los marcos son de madera y tela.
+        Buenos Aire's native resident makes his dreams come true and not ironic
+        enough has made himself abeiveloy to make this abstracts paitings that
+        resonates with you in the most peaceful ways.
       </h2>
 
-      <div className="contenedor">
-        <div className="obra">
-          <img src="/1.jpeg"></img>
-        </div>
-        <div className="obra">
-          <img src="/2.jpeg"></img>
-        </div>
-        <div className="obra">
-          <img src="/3.jpeg"></img>
-        </div>
-        <div className="obra">
-          <img src="/4.jpeg"></img>
-        </div>
-        <div className="obra">
-          <img src="/5.jpeg"></img>
-        </div>
-        <div className="obra">
-          <img src="/6.jpeg"></img>
-        </div>
-        <div className="obra">
-          <img src="/7.jpeg"></img>
-        </div>
-        <div className="obra">
-          <img src="/8.jpeg"></img>
-        </div>
-        <div className="obra">
-          <img src="/9.jpeg"></img>
-        </div>
-        <div className="obra">
-          <img src="/10.jpeg"></img>
-        </div>
-      </div>
       <div className="contact" id="contacto">
         <h1>Contacto</h1>
-        <h2>Tel: 1138492847 </h2>
+        <p>Email: dreamerspaiting@gmail.com </p>
+        <p>Instagram: dreamers.paiting </p>
       </div>
     </div>
   );
