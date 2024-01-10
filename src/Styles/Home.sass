@@ -6,17 +6,24 @@
   background-color: $fondo-claro
   color: $texto-claro
 
-h1, h2
-  padding: 2rem
+.all
+  min-height: 100vh
+  padding: 1rem 2rem
   text-align: center
 
-.contenedor
+.pinturas-div
+  padding-top: 1rem
+  display: grid
+  grid-template-columns: repeat(5, 1fr)
+  gap: 0.4em
   width: 100%
-  text-align: center
 
-.obra
-  img
-    max-width: 100%
+.pintura-div
+  width: 100%
+  height: 100%
+
+.pinturas
+  width: 100%
 
 .imagen-normal 
   /* Estilos normales de la imagen */

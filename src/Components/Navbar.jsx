@@ -5,6 +5,9 @@ import { setTheme } from "../state/theme";
 import { alerts } from "../utils/alerts";
 import sun from "../assets/sun.svg";
 import moon from "../assets/half-moon.svg";
+import bird from "../assets/twitter.svg";
+import instagram from "../assets/instagram.svg";
+import logo from "../assets/dp-logo.jpeg";
 
 function Navbar() {
   const [dark, setDark] = useState(false);
@@ -21,26 +24,34 @@ function Navbar() {
 
   return (
     <div className={dark ? "nav-oscuro navbar" : "nav-claro navbar"}>
-      <div className="bottom">
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
+      <div className="logo-principal">
+        <img src={logo} className="themeButtom logo"></img>
       </div>
-      <div className="logo">
-        <Link to="/" onClick={handleClick}>
-          <img src="./logo.jpeg"></img>
-        </Link>
-      </div>
-      <div onClick={handleDarkMode} className="themeButtom">
-        {dark ? (
-          <img src={sun} alt="sun-logo" />
-        ) : (
-          <img src={moon} alt="moon" />
-        )}
-      </div>
-      <div className="sobreMI"></div>
-      <div className="search">
-        <a href="#contacto">Contacto</a>
+
+      <h3>INTRO</h3>
+      <h3>ABOUT</h3>
+      <h3>PAINTINGS</h3>
+      <h3>CONTACT</h3>
+
+      <div className="logos">
+        <div onClick={handleDarkMode} className="themeButtom">
+          {dark ? (
+            <img src={sun} alt="sun-logo" />
+          ) : (
+            <img src={moon} alt="moon" />
+          )}
+        </div>
+
+        <a
+          href="https://www.instagram.com/dreamer.paintings?igsh=MXE4ZWw1eDFneXluaQ%3D%3D&utm_source=qr"
+          target="_blank"
+        >
+          <img src={bird} className="themeButtom"></img>
+        </a>
+
+        <a href="" target="_blank">
+          <img src={instagram} className="themeButtom"></img>
+        </a>
       </div>
     </div>
   );
