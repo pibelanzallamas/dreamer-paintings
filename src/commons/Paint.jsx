@@ -3,17 +3,13 @@ import React, { useState } from "react";
 function Paint({ pintura }) {
   const [ampliada, setAmpliada] = useState(false);
 
-  function handleClick() {
-    setAmpliada(!ampliada);
-  }
-
   return (
-    <div className="pintura-div center" onClick={handleClick}>
+    <div className="pintura">
       <img
         src={pintura}
         alt="pintura"
         className={
-          ampliada ? "imagen-ampliada pinturas" : "imagen-normal pinturas"
+          ampliada ? "pinturas imagen-ampliada" : "imagen-normal pinturas"
         }
       ></img>
     </div>

@@ -2,21 +2,17 @@ import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setTheme } from "../state/theme";
-import { alerts } from "../utils/alerts";
+import logo from "../assets/dp-logo.jpeg";
 import sun from "../assets/sun.svg";
 import moon from "../assets/half-moon.svg";
 import bird from "../assets/twitter.svg";
 import instagram from "../assets/instagram.svg";
-import logo from "../assets/dp-logo.jpeg";
 
 function Navbar() {
   const [dark, setDark] = useState(false);
   const dispatch = useDispatch();
 
-  function handleClick() {
-    alerts("hhh", "gooo", "success");
-  }
-
+  //cambia a modo nocturno
   function handleDarkMode() {
     dispatch(setTheme(!dark));
     setDark(!dark);
@@ -24,16 +20,21 @@ function Navbar() {
 
   return (
     <div className={dark ? "nav-oscuro navbar" : "nav-claro navbar"}>
-      <div className="logo-principal">
-        <img src={logo} className="themeButtom logo"></img>
+      <div className="logo">
+        <Link to="/">
+          <img src={logo} alt="logo" />
+        </Link>
       </div>
 
-      <h3>INTRO</h3>
-      <h3>ABOUT</h3>
-      <h3>PAINTINGS</h3>
-      <h3>CONTACT</h3>
+      <ul className="titulos">
+        <Link to="/">INTRO</Link>
+        <Link to="/about">ABOUT</Link>
+        <Link to="/paintings">PAINTINGS</Link>
+        <Link to="schedule">SCHEDULE</Link>
+        <Link to="/contact">CONTACT</Link>
+      </ul>
 
-      <div className="logos">
+      <div className="botones">
         <div onClick={handleDarkMode} className="themeButtom">
           {dark ? (
             <img src={sun} alt="sun-logo" />
@@ -43,14 +44,19 @@ function Navbar() {
         </div>
 
         <a
-          href="https://www.instagram.com/dreamer.paintings?igsh=MXE4ZWw1eDFneXluaQ%3D%3D&utm_source=qr"
+          href="https://twitter.com/DreamerPainting"
           target="_blank"
+          className="themeButtom"
         >
-          <img src={bird} className="themeButtom"></img>
+          <img src={bird}></img>
         </a>
 
-        <a href="" target="_blank">
-          <img src={instagram} className="themeButtom"></img>
+        <a
+          href="https://www.instagram.com/dreamer.paintings"
+          target="_blank"
+          className="themeButtom"
+        >
+          <img src={instagram}></img>
         </a>
       </div>
     </div>
