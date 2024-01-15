@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import wallpaper from "../assets/dp-logo.jpeg";
 
 function Home() {
   const theme = useSelector((state) => state.theme.dark);
@@ -7,11 +8,16 @@ function Home() {
   return (
     <div className={theme ? "home-oscuro all" : "home-claro all"}>
       <h1>Dreamer Paintings</h1>
-      <img src="" alt="" />
+      <div className="home-image top">
+        <img src={wallpaper} alt="homeFondo" />
+      </div>
       <p className="top">
-        Buenos Aire's native resident makes his dreams come true and not ironic
-        enough has made himself abeiveloy to make this abstracts paitings that
-        resonates in the most peaceful way.
+        {/* Mi nombre es Fernando, soy arista plástico independiente. Me fui
+        profesionalizando haciendo pequeños cursos y a través de la
+        autoexperimentación. */}
+        My name is Fernando, I am an independent plastic artist. I went
+        professionalizing by doing small courses and through
+        self-experimentation.
       </p>
     </div>
   );

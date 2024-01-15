@@ -20,10 +20,38 @@
   color: #1c2826;
 }
 
+.home-image {
+  height: 30vh;
+  width: 50vw;
+  overflow: hidden;
+}
+.home-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: 0 30%;
+}
+
 p {
   font-size: 1.5rem;
   font-weight: 600;
   width: 40%;
+}
+
+.email {
+  margin-top: 0.4rem;
+}
+
+.contact-image {
+  height: 30vh;
+  width: 40vw;
+  overflow: hidden;
+}
+.contact-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-position: 0 25%;
 }
 
 .navbar {
@@ -97,7 +125,6 @@ p {
 }
 
 .pinturas {
-  border: 1px #AAAfb3 solid;
   width: 100%;
 }
 

@@ -10,7 +10,7 @@ function Contact() {
       <p className="top">
         <u>Email</u>
       </p>
-      <i>
+      <i className="email">
         <p>dreamerspaiting@gmail.com</p>
       </i>
     </div>

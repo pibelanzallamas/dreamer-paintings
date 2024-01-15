@@ -6,7 +6,7 @@ function NotFound() {
 
   return (
     <div className={theme ? "home-oscuro all" : "home-claro all"}>
-      <h2>Disculpe, no se encontro la dirección.</h2>
+      <h2>Sorry, the address was not found.</h2>
     </div>
   );
 }
