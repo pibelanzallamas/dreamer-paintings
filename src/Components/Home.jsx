@@ -4,6 +4,7 @@ import wallpaper from "../assets/dp-logo.jpeg";
 
 function Home() {
   const theme = useSelector((state) => state.theme.dark);
+  const lang = useSelector((state) => state.lang.esp);
 
   return (
     <div className={theme ? "home-oscuro all" : "home-claro all"}>
@@ -12,12 +13,19 @@ function Home() {
         <img src={wallpaper} alt="homeFondo" />
       </div>
       <p className="top">
-        {/* Mi nombre es Fernando, soy arista plástico independiente. Me fui
-        profesionalizando haciendo pequeños cursos y a través de la
-        autoexperimentación. */}
-        My name is Fernando, I am an independent plastic artist. I went
-        professionalizing by doing small courses and through
-        self-experimentation.
+        {lang ? (
+          <>
+            Mi nombre es Fernando, soy arista plástico independiente. Me fui
+            profesionalizando haciendo pequeños cursos y a través de la
+            autoexperimentación.
+          </>
+        ) : (
+          <>
+            My name is Fernando, I am an independent plastic artist. I went
+            professionalizing by doing small courses and through
+            self-experimentation.
+          </>
+        )}
       </p>
     </div>
   );

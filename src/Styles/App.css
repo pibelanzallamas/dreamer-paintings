@@ -101,7 +101,7 @@ p {
   margin-left: 0.7rem;
 }
 
-.themeButtom {
+.boton {
   width: 2.5rem;
   border-radius: 50%;
   background-color: #ccc;
@@ -109,6 +109,12 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.banderas {
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
 }
 
 .container {
