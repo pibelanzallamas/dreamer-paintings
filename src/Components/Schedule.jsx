@@ -16,8 +16,8 @@ function Schedule() {
           </>
         ) : (
           <>
-            I make 5 paintings a month; with which I will be painting more
-            paintings of monthly or quarterly.
+            I create 5 paintings a month; therefore, I will be producing more
+            artwork on a monthly or quarterly basis.
           </>
         )}
       </p>

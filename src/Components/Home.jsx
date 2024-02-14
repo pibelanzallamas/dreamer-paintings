@@ -15,7 +15,7 @@ function Home() {
       <p className="top">
         {lang ? (
           <>
-            Mi nombre es Fernando, soy arista plástico independiente. Me fui
+            Mi nombre es Fernando, soy artista plástico independiente. Me fui
             profesionalizando haciendo pequeños cursos y a través de la
             autoexperimentación.
           </>

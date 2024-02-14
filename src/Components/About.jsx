@@ -24,10 +24,10 @@ function About() {
         ) : (
           <>
             I make my paintings through the “actinology painting” technique,
-            whose The result is abstract paintings. I always use tempera on
-            paper white; and only 4 colors: black, blue, red, green. I do not
-            use artificial intelligence. The actual size of all paintings is A4:
-            30 cm high x 20 cm wide.
+            whose result is abstract paintings. I always use tempera on white
+            paper; and only 4 colors: black, blue, red and green. I do not use
+            artificial intelligence. The actual size of all paintings is A4: 30
+            cm high x 20 cm wide.
           </>
         )}
       </p>
