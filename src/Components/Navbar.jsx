@@ -57,7 +57,7 @@ function Navbar() {
       </ul>
 
       <div className="botones">
-        <div tabIndex="0" onClick={handleDarkMode} className="boton">
+        <div onClick={handleDarkMode} className="boton">
           {dark ? (
             <img src={sun} alt="sun-logo" />
           ) : (
@@ -81,7 +81,7 @@ function Navbar() {
           <img src={instagram}></img>
         </a>
 
-        <div tabIndex="0" onClick={handleLanguage} className="banderas">
+        <div onClick={handleLanguage} className="banderas">
           {esp ? (
             <img src={britain} alt="britain" />
           ) : (
