@@ -76,6 +76,13 @@ function Navbar() {
         )}
       </ul>
 
+      <div className="hamburguesa">
+        <h2>hoola</h2>
+        <div className="linea-hamburguesa">hooo</div>
+        <div className="linea-hamburguesa"></div>
+        <div className="linea-hamburguesa"></div>
+      </div>
+
       <div className="botones">
         <div onClick={handleDarkMode} className="boton">
           {dark ? (
