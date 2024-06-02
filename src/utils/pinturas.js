@@ -24,12 +24,4 @@ export const pinturas = [
   "../../editadas/23.jpg",
   "../../editadas/24.jpg",
   "../../editadas/25.jpg",
-  "../../editadas/26.jpg",
-  "../../editadas/27.jpg",
-  "../../editadas/28.jpg",
-  "../../editadas/29.jpg",
-  "../../editadas/30.jpg",
-  "../../editadas/31.jpg",
-  "../../editadas/32.jpg",
-  "../../editadas/33.jpg",
 ];
