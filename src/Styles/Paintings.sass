@@ -3,11 +3,18 @@
   display: grid
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
   gap: 10px
-  width: 60%
+  width: 100%
 
 .pintura
   width: 100%
   height: 100%
+  border: 1px #571818 solid
+  img
+    display: block
 
 .pinturas
   width: 100%
+
+@media (min-width: 740px)
+  .container
+    width: 80%
