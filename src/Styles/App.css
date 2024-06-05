@@ -11,12 +11,12 @@
 }
 
 .home-oscuro {
-  background-color: #1c2826;
+  background-color: #810808;
   color: #d5c7bc;
 }
 
 .home-claro {
-  background-color: #AAAfb3;
+  background-color: #810808;
   color: #1c2826;
 }
 
@@ -62,12 +62,12 @@ p {
 }
 
 .nav-oscuro {
-  background-color: #1c2826;
+  background-color: #810808;
   color: #d5c7bc;
 }
 
 .nav-claro {
-  background-color: #AAAfb3;
+  background-color: #810808;
   color: #1c2826;
 }
 
@@ -155,8 +155,8 @@ p {
 .container {
   padding-top: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
   width: 100%;
 }
 
@@ -169,13 +169,9 @@ p {
   display: block;
 }
 
-.pinturas {
-  width: 100%;
-}
-
 @media (min-width: 740px) {
   .container {
-    width: 90%;
+    width: 78%;
   }
 }
 * {

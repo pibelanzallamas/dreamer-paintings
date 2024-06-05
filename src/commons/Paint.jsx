@@ -1,17 +1,18 @@
 import React, { useState } from "react";
+import ModalImage from "react-modal-image";
 
 function Paint({ pintura }) {
   const [ampliada, setAmpliada] = useState(false);
 
   return (
     <div className="pintura">
-      <img
-        src={pintura}
-        alt="pintura"
-        className={
-          ampliada ? "pinturas imagen-ampliada" : "imagen-normal pinturas"
-        }
-      ></img>
+      <ModalImage
+        small={pintura}
+        hideDownload={true}
+        hideZoom={true}
+        large={pintura}
+        alt="Dreamer Paintings"
+      />
     </div>
   );
 }

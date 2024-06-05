@@ -1,4 +1,8 @@
 export const pinturas = [
+  "13.jpg",
+  "23.jpg",
+  "11.jpg",
+  "24.jpg",
   "1.jpg",
   "2.jpg",
   "3.jpg",
@@ -9,9 +13,7 @@ export const pinturas = [
   "8.jpg",
   "9.jpg",
   "10.jpg",
-  "11.jpg",
   "12.jpg",
-  "13.jpg",
   "14.jpg",
   "15.jpg",
   "16.jpg",
@@ -21,7 +23,5 @@ export const pinturas = [
   "20.jpg",
   "21.jpg",
   "22.jpg",
-  "23.jpg",
-  "24.jpg",
   "25.jpg",
 ];
