@@ -8,12 +8,27 @@ function Contact() {
   return (
     <div className={theme ? "home-oscuro all" : "home-claro all"}>
       <h1>{lang ? <>Contacto</> : <>Contact</>}</h1>
-      <p className="top">
+      <br />
+      <br />
+      {/* <p className="top">
         <u>Email</u>
+      </p> */}
+      <p className="email">
+        <i>Email: dreamerspaiting@gmail.com</i>
       </p>
-      <i className="email">
-        <p>dreamerspaiting@gmail.com</p>
-      </i>
+      <p className="email">
+        <i>Instagram: dreamer.paintings</i>
+      </p>
+      <p className="email">
+        <a
+          href="https://twitter.com/DreamerPainting"
+          target="_blank"
+          style={{ hover: "red" }}
+          // className="boton"
+        >
+          <i>Twitter: dreamer.paintings</i>
+        </a>
+      </p>
     </div>
   );
 }

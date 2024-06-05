@@ -8,16 +8,19 @@ function Schedule() {
   return (
     <div className={theme ? "home-oscuro all" : "home-claro all"}>
       <h1>{lang ? <>Agenda</> : <>Schedule</>}</h1>
+      <figure className="schedule-image">
+        <img src="" alt="" />
+      </figure>
       <p className="top">
         {lang ? (
           <>
-            Realizo 5 pinturas al mes; con lo cual estaré minteando más pinturas
-            de forma mensual o trimestral.
+            Realizo 5 pinturas al mes; con lo cual estaré publicando más
+            pinturas de forma mensual o trimestral.
           </>
         ) : (
           <>
-            I create 5 paintings a month; therefore, I will be producing more
-            artwork on a monthly or quarterly basis.
+            I create 5 paintings per month; therefore, I will publishing more
+            artwork monthly or quarterly basis.
           </>
         )}
       </p>

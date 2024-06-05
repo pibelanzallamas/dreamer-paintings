@@ -16,14 +16,13 @@ function Home() {
         {lang ? (
           <>
             Mi nombre es Fernando, soy artista plástico independiente. Me fui
-            profesionalizando haciendo pequeños cursos y a través de la
+            profesionalizando haciendo cursos y a través de la
             autoexperimentación.
           </>
         ) : (
           <>
-            My name is Fernando, I am an independent plastic artist. I went
-            professionalizing by doing small courses and through
-            self-experimentation.
+            My name is Fernando. I am an independent plastic artist. I was
+            professionalizing by doing courses and through self-experimentation.
           </>
         )}
       </p>
