@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import scheme from "../assets/pic2.jpeg";
 
 function Contact() {
   const theme = useSelector((state) => state.theme.dark);
@@ -8,6 +9,9 @@ function Contact() {
   return (
     <div className={theme ? "home-oscuro all" : "home-claro all"}>
       <h1>{lang ? <>Contacto</> : <>Contact</>}</h1>
+      <figure className="contact-image top">
+        <img src={scheme} alt="" />
+      </figure>
       <br />
       <br />
       {/* <p className="top">
