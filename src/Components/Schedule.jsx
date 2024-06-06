@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import scheme from "../assets/pic1.jpg";
 
 function Schedule() {
   const theme = useSelector((state) => state.theme.dark);
@@ -8,8 +9,8 @@ function Schedule() {
   return (
     <div className={theme ? "home-oscuro all" : "home-claro all"}>
       <h1>{lang ? <>Agenda</> : <>Schedule</>}</h1>
-      <figure className="schedule-image">
-        <img src="" alt="" />
+      <figure className="schedule-image top">
+        <img src={scheme} alt="" />
       </figure>
       <p className="top">
         {lang ? (
