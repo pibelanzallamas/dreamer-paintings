@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import scheme from "../assets/pic2.jpeg";
+import scheme from "../assets/pic4.jpg";
 
 function Contact() {
   const theme = useSelector((state) => state.theme.dark);
@@ -13,7 +13,7 @@ function Contact() {
         <img src={scheme} alt="" />
       </figure>
       <br />
-      <br />
+
       {/* <p className="top">
         <u>Email</u>
       </p> */}

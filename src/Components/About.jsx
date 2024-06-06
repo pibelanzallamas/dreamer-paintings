@@ -9,7 +9,7 @@ function About() {
   return (
     <div className={theme ? "home-oscuro all" : "home-claro all"}>
       <h1>{lang ? <>Acerca</> : <>About</>}</h1>
-      <div className="contact-image">
+      <div className="about-image">
         <img src={aboutImage} className="top" alt="" />
       </div>
       <p className="top">
