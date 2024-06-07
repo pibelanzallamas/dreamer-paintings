@@ -1,7 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { pinturas } from "../utils/pinturas";
-// import { tiny } from "../utils/pinturastiny";
 import Paint from "../commons/Paint";
 
 function Paintings() {
@@ -12,7 +11,7 @@ function Paintings() {
       <h1>Paintings</h1>
       <div className="container top">
         {pinturas.map((pintura) => (
-          <Paint pintura={pintura} />
+          <Paint pintura={pintura.normal} tiny={pintura.tiny} />
         ))}
       </div>
     </div>

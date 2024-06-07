@@ -1,11 +1,11 @@
 import React from "react";
 import ModalImage from "react-modal-image";
 
-function Paint({ pintura }) {
+function Paint({ pintura, tiny }) {
   return (
     <div className="pintura">
       <ModalImage
-        small={pintura}
+        small={tiny}
         hideDownload={true}
         hideZoom={true}
         large={pintura}
