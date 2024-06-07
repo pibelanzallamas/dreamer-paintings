@@ -43,8 +43,8 @@ p {
 }
 
 .about-image {
-  height: 30vh;
-  width: 40vw;
+  height: 35vh;
+  width: 50vw;
   overflow: hidden;
 }
 .about-image img {
@@ -220,6 +220,10 @@ a:hover {
 
 span {
   text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 /*# sourceMappingURL=App.css.map */
