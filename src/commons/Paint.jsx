@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import ModalImage from "react-modal-image";
 
 function Paint({ pintura }) {
-  const [ampliada, setAmpliada] = useState(false);
-
   return (
     <div className="pintura">
       <ModalImage

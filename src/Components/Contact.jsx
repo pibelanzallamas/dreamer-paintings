@@ -14,24 +14,29 @@ function Contact() {
       </figure>
       <br />
 
-      {/* <p className="top">
-        <u>Email</u>
-      </p> */}
       <p className="email">
-        <i>Email: dreamerspaiting@gmail.com</i>
+        <i>
+          <span>Email</span>
+          <a href="mailto:dreamerspaiting@gmail.com" target="_blank">
+            {": "}dreamerspaiting@gmail.com
+          </a>
+        </i>
       </p>
       <p className="email">
-        <i>Instagram: dreamer.paintings</i>
+        <i>
+          <span>Instagram</span>
+          <a href="https://www.instagram.com/dreamer.paintings" target="_blank">
+            {": "}dreamer.paintings
+          </a>
+        </i>
       </p>
       <p className="email">
-        <a
-          href="https://twitter.com/DreamerPainting"
-          target="_blank"
-          style={{ hover: "red" }}
-          // className="boton"
-        >
-          <i>Twitter: dreamer.paintings</i>
-        </a>
+        <i>
+          <span>Twitter</span>
+          <a href="https://twitter.com/DreamerPainting" target="_blank">
+            {": "}dreamer.paintings
+          </a>
+        </i>
       </p>
     </div>
   );

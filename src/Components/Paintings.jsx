@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { pinturas } from "../utils/pinturas";
+// import { tiny } from "../utils/pinturastiny";
 import Paint from "../commons/Paint";
 
 function Paintings() {

@@ -1,5 +1,5 @@
-export const pinturas = [
-  "13.jpg",
+export const tiny = [
+  "tinified/13.jpg",
   "23.jpg",
   "11.jpg",
   "4.jpg",
