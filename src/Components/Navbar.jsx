@@ -84,14 +84,6 @@ function Navbar() {
       </div>
 
       <div className="botones">
-        <div onClick={handleDarkMode} className="boton">
-          {dark ? (
-            <img src={sun} alt="sun-logo" />
-          ) : (
-            <img src={moon} alt="moon" />
-          )}
-        </div>
-
         <a
           href="https://twitter.com/DreamerPainting"
           target="_blank"
