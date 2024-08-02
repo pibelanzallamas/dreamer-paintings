@@ -1,23 +1,17 @@
 nav
-  padding: 1rem 1rem 0 2rem
+  padding: 1rem
   width: 100%
   display: flex
   justify-content: space-between
-
-.nav-oscuro
-  background-color: $fondo-oscuro
-  color: $texto-oscuro
-
-.nav-claro
-  background-color: $fondo-claro
-  color: $texto-claro
+  color: $texto
+  background-color: $fondo
 
 .home-button
   background-image: url("../assets/dp-logo.jpeg")
   background-size: cover
   background-position: center
 
-.links
+.links-desktop
   display: flex
   list-style: none
   font-size: 1.5rem
@@ -26,14 +20,11 @@ nav
   width: 60%
   justify-content: space-between
 
-.hamburguesa
-  display: none
-
-.botones
+.buttons-desktop
   display: flex 
   gap: 0.7rem
 
-.boton
+.social-button
   width: 2.5rem
   border-radius: 50%
   background-color: #ccc
@@ -51,21 +42,52 @@ nav
   background-image: url("../assets/spain.svg")
 .england
   background-image: url("../assets/england.svg")
+ 
+.hamburger-button
+  display: none
 
 @media screen and (max-width: 768px) 
-  .navbar
+  .links-desktop
+    display: none
+
+  .buttons-desktop
+    display: none
+
+  nav
+    padding: 0.5rem
+  
+  .hamburger-button
+    display: flex
+    background-image: url("../assets/hamburger.svg") 
+    background-color: transparent
+
+  .hidden
+    display: flex
+    flex-direction: column
+    color: $texto
+    background-color: $fondo
+    padding-bottom: 0.7rem
+
+  .links-mobile
+    display: flex
     flex-direction: column
     align-items: center
+    gap: 0.7rem
+    font-size: 1.2rem
+    font-weight: 600
 
-  .titulos 
-    width: auto
-
-  .botones
+  .buttons-mobile
     display: flex
-
-  .botones > div,
-  .botones > a 
-    margin-left: 0.7rem
+    margin-top: 0.7rem
+    gap: 0.7rem
+    justify-content: center
+    button
+      width: 2rem
+      height: 2rem
+    
+  .social-button
+    width: 2rem
+    height: 2rem
 
 @media (max-width: 900px)
   .titulos

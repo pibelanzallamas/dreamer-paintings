@@ -3,11 +3,10 @@ import { useSelector } from "react-redux";
 import wallpaper from "../assets/dp-logo.jpeg";
 
 function Home() {
-  const theme = useSelector((state) => state.theme.dark);
   const lang = useSelector((state) => state.lang.esp);
 
   return (
-    <div className={theme ? "home-oscuro all" : "home-claro all"}>
+    <div className="home-oscuro all">
       <h1>Dreamer Paintings</h1>
       <div className="home-image top">
         <img src={wallpaper} alt="homeFondo" />

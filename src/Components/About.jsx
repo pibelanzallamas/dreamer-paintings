@@ -3,14 +3,13 @@ import { useSelector } from "react-redux";
 import aboutImage from "../assets/dp-profile.jpeg";
 
 function About() {
-  const theme = useSelector((state) => state.theme.dark);
   const lang = useSelector((state) => state.lang.esp);
 
   return (
-    <div className={theme ? "home-oscuro all" : "home-claro all"}>
+    <div className="home-oscuro all">
       <h1>{lang ? <>Acerca</> : <>About</>}</h1>
       <div className="about-image">
-        <img src={aboutImage} className="top" alt="" />
+        <img src={aboutImage} className="top" alt="about-image" />
       </div>
       <p className="top">
         {lang ? (

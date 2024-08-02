@@ -6,57 +6,40 @@ import bird from "../assets/twitter.svg";
 import instagram from "../assets/instagram.svg";
 
 function Navbar({ isOpen }) {
-  const [esp, setEsp] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const [esp, setEsp] = useState(false);
 
-  //cambia de idioma
   function handleLanguage() {
     dispatch(setLang(!esp));
     setEsp(!esp);
   }
 
-  //GO home
   function handleHome() {
     navigate("/");
   }
 
-  function handleKeySpace(event) {
-    if (event.key === " ") {
-      event.preventDefault();
-      navigate("/about");
-    }
-  }
-
   return (
-    <nav className="nav-oscuro navbar">
-      <button onClick={handleHome} className="flags home-button"></button>
-      <ul className="links">
-        <Link key={2} to="/about" onKeyDown={handleKeySpace}>
-          {esp ? "ACERCA" : "ABOUT"}
-        </Link>
-        <Link key={3} to="/paintings">
-          {esp ? "PINTURAS" : "PAINTINGS"}
-        </Link>
-        <Link key={4} to="/schedule">
-          {esp ? "AGENDA" : "SCHEDULE"}
-        </Link>
-        <Link key={5} to="/contact">
-          {esp ? "CONTACTO" : "CONTACT"}
-        </Link>
+    <nav>
+      <button onClick={handleHome} className="home-button flags"></button>
+      <ul className="links-desktop">
+        <Link to="/about">{esp ? "ACERCA" : "ABOUT"}</Link>
+        <Link to="/paintings">{esp ? "PINTURAS" : "PAINTINGS"}</Link>
+        <Link to="/schedule">{esp ? "AGENDA" : "SCHEDULE"}</Link>
+        <Link to="/contact">{esp ? " CONTACTO" : "CONTACT"}</Link>
       </ul>
-      <div className="botones">
+      <div className="buttons-desktop">
         <a
           href="https://twitter.com/DreamerPainting"
           target="_blank"
-          className="boton"
+          className="social-button"
         >
           <img src={bird}></img>
         </a>
         <a
           href="https://www.instagram.com/dreamer.paintings"
           target="_blank"
-          className="boton"
+          className="social-button"
         >
           <img src={instagram}></img>
         </a>
@@ -66,6 +49,7 @@ function Navbar({ isOpen }) {
           <button className="flags england" onClick={handleLanguage}></button>
         )}
       </div>
+      <button onClick={isOpen} className="hamburger-button flags"></button>
     </nav>
   );
 }
