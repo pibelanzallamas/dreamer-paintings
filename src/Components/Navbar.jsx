@@ -1,7 +1,6 @@
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { setTheme } from "../state/theme";
 import { setLang } from "../state/lang";
 import logo from "../assets/dp-logo.jpeg";
 import bird from "../assets/twitter.svg";
@@ -9,16 +8,9 @@ import instagram from "../assets/instagram.svg";
 import britain from "../assets/great-britain.svg";
 import spain from "../assets/spain.svg";
 
-function Navbar() {
-  const [dark, setDark] = useState(false);
+function Navbar({ isOpen }) {
   const [esp, setEsp] = useState(false);
   const dispatch = useDispatch();
-
-  //cambia a modo nocturno
-  function handleDarkMode() {
-    dispatch(setTheme(!dark));
-    setDark(!dark);
-  }
 
   //cambia de idioma
   function handleLanguage() {
@@ -27,13 +19,12 @@ function Navbar() {
   }
 
   return (
-    <div className={dark ? "nav-oscuro navbar" : "nav-claro navbar"}>
+    <div className={"nav-oscuro navbar"}>
       <div className="logo">
         <Link to="/">
           <img src={logo} alt="logo" />
         </Link>
       </div>
-
       <ul className="titulos">
         {esp ? (
           <>
@@ -73,14 +64,6 @@ function Navbar() {
           </>
         )}
       </ul>
-
-      <div className="hamburguesa">
-        <h2>hoola</h2>
-        <div className="linea-hamburguesa">hooo</div>
-        <div className="linea-hamburguesa"></div>
-        <div className="linea-hamburguesa"></div>
-      </div>
-
       <div className="botones">
         <a
           href="https://twitter.com/DreamerPainting"
@@ -97,7 +80,6 @@ function Navbar() {
         >
           <img src={instagram}></img>
         </a>
-
         <div onClick={handleLanguage} className="banderas">
           {esp ? (
             <img src={britain} alt="britain" />
