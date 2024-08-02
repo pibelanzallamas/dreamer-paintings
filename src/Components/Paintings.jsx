@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { pinturas } from "../utils/pinturas";
-import Paint from "../commons/Paint";
+import Paint from "../Commons/Paint";
 
 function Paintings() {
   const theme = useSelector((state) => state.theme.dark);

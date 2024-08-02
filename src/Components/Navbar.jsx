@@ -4,8 +4,6 @@ import { useDispatch } from "react-redux";
 import { setTheme } from "../state/theme";
 import { setLang } from "../state/lang";
 import logo from "../assets/dp-logo.jpeg";
-import sun from "../assets/sun.svg";
-import moon from "../assets/half-moon.svg";
 import bird from "../assets/twitter.svg";
 import instagram from "../assets/instagram.svg";
 import britain from "../assets/great-britain.svg";
