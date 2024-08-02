@@ -6,12 +6,12 @@ function About() {
   const lang = useSelector((state) => state.lang.esp);
 
   return (
-    <div className="home-oscuro all">
+    <div className="all">
       <h1>{lang ? <>Acerca</> : <>About</>}</h1>
-      <div className="about-image">
-        <img src={aboutImage} className="top" alt="about-image" />
-      </div>
-      <p className="top">
+      <figure className="about-image">
+        <img src={aboutImage} alt="about-image" />
+      </figure>
+      <p className="about-text">
         {lang ? (
           <>
             Realizo mis pinturas a través de la técnica “action-painting”, cuyo

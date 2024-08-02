@@ -6,12 +6,12 @@ function Home() {
   const lang = useSelector((state) => state.lang.esp);
 
   return (
-    <div className="home-oscuro all">
+    <div className="all">
       <h1>Dreamer Paintings</h1>
-      <div className="home-image top">
+      <figure className="home-image">
         <img src={wallpaper} alt="homeFondo" />
-      </div>
-      <p className="top">
+      </figure>
+      <p>
         {lang ? (
           <>
             Mi nombre es Fernando, soy artista plástico independiente. Me fui

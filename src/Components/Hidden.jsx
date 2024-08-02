@@ -23,34 +23,34 @@ function Hidden() {
         <Link to="/paintings">{esp ? "PINTURAS" : "PAINTINGS"}</Link>
         <Link to="/schedule">{esp ? "AGENDA" : "SCHEDULE"}</Link>
         <Link to="/contact">{esp ? "CONTACTO" : "CONTACT"}</Link>
+        <div className="buttons-mobile">
+          <a
+            href="https://twitter.com/DreamerPainting"
+            target="_blank"
+            className="social-button"
+          >
+            <img src={bird}></img>
+          </a>
+          <a
+            href="https://www.instagram.com/dreamer.paintings"
+            target="_blank"
+            className="social-button"
+          >
+            <img src={instagram}></img>
+          </a>
+          {esp ? (
+            <button
+              className="flags flag-button spain"
+              onClick={handleLanguage}
+            ></button>
+          ) : (
+            <button
+              className="flags flag-button england"
+              onClick={handleLanguage}
+            ></button>
+          )}
+        </div>
       </ul>
-      <div className="buttons-mobile">
-        <a
-          href="https://twitter.com/DreamerPainting"
-          target="_blank"
-          className="social-button"
-        >
-          <img src={bird}></img>
-        </a>
-        <a
-          href="https://www.instagram.com/dreamer.paintings"
-          target="_blank"
-          className="social-button"
-        >
-          <img src={instagram}></img>
-        </a>
-        {esp ? (
-          <button
-            className="flags flag-button spain"
-            onClick={handleLanguage}
-          ></button>
-        ) : (
-          <button
-            className="flags flag-button england"
-            onClick={handleLanguage}
-          ></button>
-        )}
-      </div>
     </div>
   );
 }
