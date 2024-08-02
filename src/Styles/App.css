@@ -112,10 +112,19 @@ p {
   align-items: center;
 }
 
-.banderas {
-  height: 2.5rem;
+.flags {
   width: 2.5rem;
-  cursor: pointer;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: none;
+}
+
+.spain {
+  background-image: url("../assets/spain.svg");
+}
+
+.england {
+  background-image: url("../assets/england.svg");
 }
 
 @media screen and (max-width: 768px) {
