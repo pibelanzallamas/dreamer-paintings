@@ -1,14 +1,14 @@
 import { React, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setLang } from "../state/lang";
-import logo from "../assets/dp-logo.jpeg";
 import bird from "../assets/twitter.svg";
 import instagram from "../assets/instagram.svg";
 
 function Navbar({ isOpen }) {
   const [esp, setEsp] = useState(false);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   //cambia de idioma
   function handleLanguage() {
@@ -16,15 +16,23 @@ function Navbar({ isOpen }) {
     setEsp(!esp);
   }
 
+  //GO home
+  function handleHome() {
+    navigate("/");
+  }
+
+  function handleKeySpace(event) {
+    if (event.key === " ") {
+      event.preventDefault();
+      navigate("/about");
+    }
+  }
+
   return (
-    <div className="nav-oscuro navbar">
-      <div className="logo">
-        <Link to="/">
-          <img src={logo} alt="logo" />
-        </Link>
-      </div>
-      <ul className="titulos">
-        <Link key={2} to="/about">
+    <nav className="nav-oscuro navbar">
+      <button onClick={handleHome} className="flags home-button"></button>
+      <ul className="links">
+        <Link key={2} to="/about" onKeyDown={handleKeySpace}>
           {esp ? "ACERCA" : "ABOUT"}
         </Link>
         <Link key={3} to="/paintings">
@@ -58,7 +66,7 @@ function Navbar({ isOpen }) {
           <button className="flags england" onClick={handleLanguage}></button>
         )}
       </div>
-    </div>
+    </nav>
   );
 }
 
