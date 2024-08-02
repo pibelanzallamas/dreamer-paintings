@@ -1,17 +1,18 @@
-.container
-  padding-top: 1rem
+.paintings-container
+  margin-top: 1rem
   display: grid
-  grid-template-columns: repeat(3, 1fr)
-  gap: 25px
-  width: 100%
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr))
+  row-gap: 15px
+  column-gap: 15px
+  width: 90%
 
-.pintura
+.painting
   width: 100%
   aspect-ratio: 1 / 1.414
-  border: 1px #571818 solid
   img
     display: block
 
-@media (min-width: 740px)
-  .container
-    width: 78%
+@media (max-width: 768px)
+  .paintings-container
+    width: 90%
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr))

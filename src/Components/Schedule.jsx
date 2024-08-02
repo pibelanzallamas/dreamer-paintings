@@ -3,16 +3,15 @@ import { useSelector } from "react-redux";
 import scheme from "../assets/pic1.jpg";
 
 function Schedule() {
-  const theme = useSelector((state) => state.theme.dark);
   const lang = useSelector((state) => state.lang.esp);
 
   return (
-    <div className={theme ? "home-oscuro all" : "home-claro all"}>
+    <div className="all">
       <h1>{lang ? <>Agenda</> : <>Schedule</>}</h1>
-      <figure className="schedule-image top">
-        <img src={scheme} alt="" />
+      <figure className="schedule-image">
+        <img src={scheme} alt="schedule-image" />
       </figure>
-      <p className="top">
+      <p>
         {lang ? (
           <>
             Realizo 5 pinturas al mes; con lo cual estaré publicando más

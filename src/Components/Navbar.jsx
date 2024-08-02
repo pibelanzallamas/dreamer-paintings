@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setLang } from "../state/lang";
 import bird from "../assets/twitter.svg";
 import instagram from "../assets/instagram.svg";
@@ -8,8 +8,8 @@ import instagram from "../assets/instagram.svg";
 function Navbar({ isOpen }) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const [esp, setEsp] = useState(false);
-
+  const [esp, setEsp] = useState(useSelector((state) => state.lang.esp));
+  console.log(esp);
   function handleLanguage() {
     dispatch(setLang(!esp));
     setEsp(!esp);

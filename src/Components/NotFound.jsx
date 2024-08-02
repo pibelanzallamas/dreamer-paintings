@@ -2,11 +2,10 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 function NotFound() {
-  const theme = useSelector((state) => state.theme.dark);
   const lang = useSelector((state) => state.lang.esp);
 
   return (
-    <div className={theme ? "home-oscuro all" : "home-claro all"}>
+    <div className="all">
       <h2>
         {lang ? (
           <>Lo siento, la dirección no fue encontrada.</>

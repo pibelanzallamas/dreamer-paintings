@@ -1,5 +1,20 @@
+.contact-image
+  width: 25vw
+  height: 30vw
+  img
+    object-fit: cover
+    object-position: 0 10%
+
 span
   text-decoration: underline
 
-.email
-  margin-top: 0.4rem
+@media (max-width: 768px)
+  .contact-image
+    width: 40vw
+    height: 45vw
+    img
+      object-fit: cover
+      object-position: 0 10%
+  
+  .email
+    font-size: 1.3rem

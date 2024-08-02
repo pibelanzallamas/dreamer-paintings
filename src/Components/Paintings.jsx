@@ -1,17 +1,17 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import { pinturas } from "../utils/pinturas";
+import { useSelector } from "react-redux";
 import Paint from "../Commons/Paint";
 
 function Paintings() {
-  const theme = useSelector((state) => state.theme.dark);
+  const lang = useSelector((state) => state.lang.esp);
 
   return (
-    <div className={theme ? "home-oscuro all" : "home-claro all"}>
-      <h1>Paintings</h1>
-      <div className="container top">
-        {pinturas.map((pintura) => (
-          <Paint pintura={pintura.normal} tiny={pintura.tiny} />
+    <div className="all">
+      <h1>{lang ? <>Pinturas</> : <>Paintings</>}</h1>
+      <div className="paintings-container">
+        {pinturas.map((painting) => (
+          <Paint painting={painting.normal} tiny={painting.tiny} />
         ))}
       </div>
     </div>

@@ -3,35 +3,26 @@ import { useSelector } from "react-redux";
 import scheme from "../assets/pic4.jpg";
 
 function Contact() {
-  const theme = useSelector((state) => state.theme.dark);
   const lang = useSelector((state) => state.lang.esp);
 
   return (
-    <div className={theme ? "home-oscuro all" : "home-claro all"}>
+    <div className="all">
       <h1>{lang ? <>Contacto</> : <>Contact</>}</h1>
-      <figure className="contact-image top">
-        <img src={scheme} alt="" />
+      <figure className="contact-image">
+        <img src={scheme} alt="contact-image" />
       </figure>
-      <br />
-
       <p className="email">
-        <i>
+        <i className="contacts">
           <span>Email</span>
           <a href="mailto:dreamerspaiting@gmail.com" target="_blank">
             {": "}dreamerspaiting@gmail.com
           </a>
-        </i>
-      </p>
-      <p className="email">
-        <i>
+          <br />
           <span>Instagram</span>
           <a href="https://www.instagram.com/dreamer.paintings" target="_blank">
             {": "}dreamer.paintings
           </a>
-        </i>
-      </p>
-      <p className="email">
-        <i>
+          <br />
           <span>Twitter</span>
           <a href="https://twitter.com/DreamerPainting" target="_blank">
             {": "}dreamer.paintings
