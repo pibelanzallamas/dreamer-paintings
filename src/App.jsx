@@ -1,5 +1,5 @@
-import Navbar from "./components/Navbar";
-import AppRoutes from "./components/AppRoutes";
+import Navbar from "./Components/Navbar";
+import AppRoutes from "./Components/AppRoutes";
 import "./styles/App.css";
 import { Analytics } from "@vercel/analytics/react";
 
