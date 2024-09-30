@@ -15,7 +15,7 @@ function Contact() {
         <i className="contacts">
           <span>Email</span>
           <a href="mailto:dreamerspainting@gmail.com" target="_blank">
-            {": "}dreamerspaiting@gmail.com
+            {": "}dreamerspainting@gmail.com
           </a>
           <br />
           <span>Instagram</span>
