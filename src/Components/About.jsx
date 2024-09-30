@@ -19,7 +19,7 @@ function About() {
             <br />
             <br />
             "Action-painting" es una técnica de pintura, en donde la pintura
-            surgue de forma expontánia y enérgica, en lugar de aplicarse con
+            surgue de forma expontánea y enérgica, en lugar de aplicarse con
             cuidado, sin un esquema prefijado. Tampoco intenta ser una
             reprodución de la realidad.
             <br />

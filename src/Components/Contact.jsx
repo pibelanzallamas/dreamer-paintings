@@ -14,7 +14,7 @@ function Contact() {
       <p className="email">
         <i className="contacts">
           <span>Email</span>
-          <a href="mailto:dreamerspaiting@gmail.com" target="_blank">
+          <a href="mailto:dreamerspainting@gmail.com" target="_blank">
             {": "}dreamerspaiting@gmail.com
           </a>
           <br />
