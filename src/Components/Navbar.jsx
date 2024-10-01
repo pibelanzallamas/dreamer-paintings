@@ -44,9 +44,9 @@ function Navbar({ isOpen }) {
           <img src={instagram}></img>
         </a>
         {esp ? (
-          <button className="flags spain" onClick={handleLanguage}></button>
-        ) : (
           <button className="flags england" onClick={handleLanguage}></button>
+        ) : (
+          <button className="flags spain" onClick={handleLanguage}></button>
         )}
       </div>
       <button onClick={isOpen} className="hamburger-button flags"></button>

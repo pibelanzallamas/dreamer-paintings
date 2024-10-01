@@ -20,7 +20,7 @@ function Schedule() {
         ) : (
           <>
             I create 5 paintings per month; therefore, I will publishing more
-            artwork monthly or quarterly basis.
+            artwork on a monthly or quarterly basis.
           </>
         )}
       </p>
