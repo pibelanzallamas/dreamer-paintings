@@ -6,10 +6,10 @@ import bird from "../assets/twitter.svg";
 import instagram from "../assets/instagram.svg";
 
 function Navbar({ isOpen }) {
+  const [esp, setEsp] = useState(useSelector((state) => state.lang.esp));
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const [esp, setEsp] = useState(useSelector((state) => state.lang.esp));
-  console.log(esp);
+
   function handleLanguage() {
     dispatch(setLang(!esp));
     setEsp(!esp);
@@ -44,9 +44,9 @@ function Navbar({ isOpen }) {
           <img src={instagram}></img>
         </a>
         {esp ? (
-          <button className="flags england" onClick={handleLanguage}></button>
-        ) : (
           <button className="flags spain" onClick={handleLanguage}></button>
+        ) : (
+          <button className="flags england" onClick={handleLanguage}></button>
         )}
       </div>
       <button onClick={isOpen} className="hamburger-button flags"></button>

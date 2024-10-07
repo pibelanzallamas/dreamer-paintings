@@ -16,7 +16,7 @@ function App() {
     <div>
       <Analytics />
       <Navbar isOpen={handleOpen} />
-      {hidden && <Hidden />}
+      {hidden && <Hidden click={handleOpen} />}
       <AppRoutes />
     </div>
   );
