@@ -137,7 +137,7 @@ nav {
 
 @media (max-width: 768px) {
   .about-image {
-    height: 20vh;
+    height: 12rem;
     width: 70vw;
   }
   .about-image img {
@@ -192,12 +192,12 @@ nav {
   }
 }
 .contact-image {
-  width: 25vw;
-  height: 30vw;
+  width: 20rem;
+  height: 18rem;
 }
 .contact-image img {
   object-fit: cover;
-  object-position: 0 10%;
+  object-position: 0 8%;
 }
 
 span {
@@ -206,8 +206,8 @@ span {
 
 @media (max-width: 768px) {
   .contact-image {
-    width: 40vw;
-    height: 45vw;
+    width: 17rem;
+    height: 17rem;
   }
   .contact-image img {
     object-fit: cover;
