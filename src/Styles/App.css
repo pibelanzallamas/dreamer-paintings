@@ -116,6 +116,15 @@ nav {
   object-position: 0 30%;
 }
 
+.buy-link {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.buy-link:hover {
+  font-style: italic;
+}
+
 @media (max-width: 768px) {
   .home-image {
     height: 30vh;
