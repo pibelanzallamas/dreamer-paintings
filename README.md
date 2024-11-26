@@ -6,7 +6,7 @@ Dreamer Paintings
 
 _**Español**_
 
-Entrar al sitio web, y utilizar el menú. Para cambiar de idioma, hacer click en la bandera.
+Entrar al sitio web y utilizar el menú. Para cambiar de idioma, hacer click en la bandera.
 
 Muchas gracias.
 
