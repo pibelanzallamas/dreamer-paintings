@@ -32,7 +32,7 @@ function Home() {
         title={lang ? "Comprar NFTs" : "Buy NFTs"}
         className="buy-link"
       >
-        {lang ? <>Obtener</> : <>Buy it</>}
+        {lang ? <>Comprar NFTs</> : <>Buy NFTs</>}
       </a>
     </div>
   );
