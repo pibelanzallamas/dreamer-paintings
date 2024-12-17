@@ -26,7 +26,7 @@ function About() {
             <br />
             Siempre utilizo tempera sobre papel blanco; y solo 4 colores: negro,
             azul, rojo, verde. No utilizo inteligencia artificial. El tamaño
-            real de todas las pinturas es de A4: 30 cms alto x 20 cms ancho.
+            real de todas las pinturas es de A4: 29,7 cm alto x 21 cm ancho.
             <br />
             <br />
           </>
@@ -44,7 +44,7 @@ function About() {
             <br />
             I always use tempera on white paper; and only 4 colors: black, blue,
             red and green. I do not use artificial intelligence. The actual size
-            of all paintings is A4: 30 cm high x 20 cm wide.
+            of all paintings is A4: 29,7 cm high x 21 cm wide.
             <br />
             <br />
           </>
