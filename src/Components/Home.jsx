@@ -29,7 +29,7 @@ function Home() {
       <a
         href="https://opensea.io/collection/abstract-painting-39"
         target="_blank"
-        title={lang ? "Comprar NFTs" : "Buy NFTs"}
+        title={lang ? "Mirar NFTs :)" : "See NFTs :)"}
         className="buy-link"
       >
         {lang ? <>Comprar NFTs</> : <>Buy NFTs</>}
