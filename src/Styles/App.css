@@ -254,7 +254,7 @@ a:hover {
   flex-direction: column;
   min-height: 100vh;
   background-color: #810808;
-  background-image: url("11.jpg");
+  background-image: url("../assets/11.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-blend-mode: multiply;
