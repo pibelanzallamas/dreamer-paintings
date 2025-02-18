@@ -6,7 +6,7 @@ function Contact() {
   const lang = useSelector((state) => state.lang.esp);
 
   return (
-    <div className="all">
+    <div className="all contact-page">
       <h1>{lang ? <>Contacto</> : <>Contact</>}</h1>
       <figure className="contact-image">
         <img src={scheme} alt="contact-image" />

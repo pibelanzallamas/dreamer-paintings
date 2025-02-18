@@ -13,7 +13,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="all-all">
       <Analytics />
       <Navbar isOpen={handleOpen} />
       {hidden && <Hidden click={handleOpen} />}

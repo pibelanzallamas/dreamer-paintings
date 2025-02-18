@@ -226,6 +226,13 @@ span {
     font-size: 1.3rem;
   }
 }
+.background-paint {
+  background-color: #810808;
+  background-image: url("11bis.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -250,8 +257,14 @@ a:hover {
   color: orange;
 }
 
-.all {
+.all-all {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+}
+
+.all {
+  flex: 1;
   padding: 1rem;
   gap: 1rem;
   display: flex;
