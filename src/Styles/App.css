@@ -225,13 +225,6 @@ span {
     font-size: 1.3rem;
   }
 }
-.background-paint {
-  background-color: #810808;
-  background-image: url("11bis.png");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 * {
   padding: 0;
   margin: 0;
